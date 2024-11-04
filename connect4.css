@@ -1,0 +1,75 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px;
+    border: 5px solid navy;
+    border-radius: 4px 4px 0 0;
+    background-color: navy;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.gameBottom {
+    width: 420px;
+    height: 10px;
+    background-color: navy;
+}
+
+.legsHolder {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    height: 16px;
+}
+
+.leg {
+    width: 10px;
+    height: 16px;
+    background-color: navy;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+@media screen and (max-width: 450px) {
+    .square {
+        width: 40px;
+        height: 40px;
+    }
+
+    .gameBottom, .legsHolder{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .square {
+        width: 34px;
+        height: 34px;
+    }
+
+    .gameBottom, .legsHolder{
+        width: 300px;
+    }
+}
